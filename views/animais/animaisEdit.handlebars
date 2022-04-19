@@ -1,0 +1,8 @@
+<form action="/animaisEdit" method="POST">
+    <input type="hidden" name="id" value="{{animais._id}}">
+    <p>Nome do Animal</p><input type="text" name="nome" value="{{animais.nome}}">
+    <p>Espécie do Animal</p><input type="text" name="especie" value="{{animais.especie}}">
+    <p>Sexo do Animal</p><input type="text" name="sexo" value="{{animais.sexo}}">
+    <br><br>
+    <input type="submit" value="Editar">
+</form>

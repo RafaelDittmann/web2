@@ -1,0 +1,18 @@
+<table border="1px">
+    <tr>
+        <td> Nome </td>
+        <td> Ingredientes</td>
+        <td> Modo de preparo</td>
+        <td> Editar</td>
+        <td> Deletar</td>
+    </tr>
+    {{#each receitas}}
+    <tr>
+        <td>{{nome}}</td>
+        <td>{{ingredientes}}</td>
+        <td>{{preparo}}</td>
+        <td><a href="receitaEdit/{{_id}}"> Editar </a></td>
+        <td><a href="receitaDelete/{{_id}}"> Deletar </a></td>
+    </tr>
+    {{/each}}
+</table>

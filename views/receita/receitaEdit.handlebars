@@ -1,0 +1,8 @@
+<form action="/receitaEdit" method="POST">
+    <input type="hidden" name="id" value="{{receitas._id}}">
+    <p>Nome da Receita:</p> <input type="text" name="nome"  value="{{receitas.nome}}"> 
+    <p>Ingredientes da Receita:</p> <input type="text" name="ingredientes"  value="{{receitas.ingredientes}}">
+    <p>Modo de preparo:</p> <input type="text" name="preparo" value=" {{receitas.preparo}}">
+    <br><br> 
+    <input type="submit" value="Editar">
+</form>
